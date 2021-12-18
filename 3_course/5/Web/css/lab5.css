@@ -1,0 +1,71 @@
+.width {
+    width: 20%;
+}
+
+#line {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.row {
+    margin: 5px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#buttons {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#delall, #delast {
+    margin: 0 3px;
+}
+
+table {
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 1px;
+    border: 1px solid grey;
+    overflow: auto;
+}
+
+td, th {
+    padding: 1px 3px;
+    border: 1px solid grey;
+}
+
+#delall {
+    background-color: red;
+}
+
+#send {
+    background-color: limegreen;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    padding: 5px;
+}
+
+#col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    #line {
+        flex-direction: column;
+    }
+    .width {
+        width: 50%;
+    }
+}
