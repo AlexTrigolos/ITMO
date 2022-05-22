@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="Trigolos Alex">
+  <meta name="description" content="Site description">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <script src="../js/reg.js"></script>
+</head>
+<body id="home">
+<header class="container flex">
+  <a href="#home" id="me" class="text_shadow">Триголос Алексей<span
+    class="small vert_bot">&#128520;&#127479;&#127482;</span></a>
+  {{#if have_customer}}
+  <p>{{ customer }}</p><button  onclick="exit();">Выйти</button>
+  {{/if}}
+  <nav>
+    <ul>
+      {{#each nav}}
+        <li><a href="{{ href }}" class="text_shadow bold {{ active }}">{{ name }}</a>
+          <ul>
+            {{#each main_nav}}
+            <li><a href="{{ href }}" class="text_shadow bold">{{ name }}</a></li>
+            {{/each}}
+          </ul>
+        </li>
+      {{else}}
+        <li>Список пуст</li>
+      {{/each}}
+    </ul>
+  </nav>
+</header>
+<main>
+  <section id="abc" class="flex">
+    <div class="col-1-2 w354">
+      <img src="images/main_foto.jpg" width="354" height="472" alt="Моя фотография">
+    </div>
+    <div class="main_text">
+      <p class="text_shadow big_main_text">Триголос Алексей</p>
+      <p class="text_shadow bold">Программист</p>
+      <p class="text_shadow">Телефон:</p>
+      <p class="text_shadow">+7(961) 680 69-99</p>
+      <p class="text_shadow">E-mail:</p>
+      <a href="mailto:alexvlg34@gmail.com" target="_blank" class="text_shadow">alexvlg34@gmail.com</a>
+      <p class="text_shadow">Дата рождения:</p>
+      <time datetime="2001-09-03" class="text_shadow">3 сентября 2001</time>
+    </div>
+  </section>
+  <section id="ic">
+    <div class="flex mid_icon">
+      <a href="https://vk.com/utraspa" target="_blank" class="icon"><img src="images/vk_icon_w.png" width="35"
+                                                                         height="35" alt="VK"></a>
+      <a href="https://www.instagram.com/leshik_007/" target="_blank" class="icon"><img
+        src="images/inst_icon_b.png" width="35" height="35" alt="Inst"></a>
+    </div>
+    <div class="text_align_center" id="pad-top">
+      <h2>Обо мне</h2>
+      <p id="text-about-me">הכל עובר, גם זה יעבור<sub id="author">שלמה המלך</sub></p>
+    </div>
+  </section>
+  <section class="block">
+    <img src="images/1.jpg" class="gallery_foto" alt="">
+    <img src="images/2.jpg" class="gallery_foto" alt="">
+    <img src="images/3.jpg" class="gallery_foto" alt="">
+    <img src="images/4.jpg" class="gallery_foto" alt="">
+    <img src="images/5.jpg" class="gallery_foto" alt="">
+    <img src="images/6.jpg" class="gallery_foto" alt="">
+  </section>
+  <section>
+    <div class="table">
+      <div>Company</div>
+      <div>Q1</div>
+      <div>Q2</div>
+      <div>Q3</div>
+      <div>Q4</div>
+      <div>Microsoft</div>
+      <div>20.3</div>
+      <div>30.5</div>
+      <div>23.5</div>
+      <div>40.3</div>
+      <div>Google</div>
+      <div>50.2</div>
+      <div>40.63</div>
+      <div>45.23</div>
+      <div>39.3</div>
+      <div>Apple</div>
+      <div>25.4</div>
+      <div>30.2</div>
+      <div>33.3</div>
+      <div>36.7</div>
+      <div>IBM</div>
+      <div>20.4</div>
+      <div>15.6</div>
+      <div>22.3</div>
+      <div>29.3</div>
+    </div>
+  </section>
+  <section class="container">
+    <h3 id="work_experience" class="bold">Опыт работы</h3>
+    <ul>
+      <li><p>2015-2017</p>
+        <p>Магистр</p></li>
+      <li><p>2015-2017</p>
+        <p>Магистр</p></li>
+      <li><p>2015-2017</p>
+        <p>Магистр</p></li>
+    </ul>
+    <ul>
+      <li><p class="bold">Название компании</p>
+        <p>Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды,
+          чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое место на
+          странице.</p></li>
+      <li><p class="bold">Название компании</p>
+        <p>Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды,
+          чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое место на
+          странице.</p></li>
+      <li><p class="bold">Название компании</p>
+        <p>Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды,
+          чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое место на
+          странице.</p></li>
+    </ul>
+  </section>
+  <section class="container">
+    <h3 id="skills" class="bold">Навыки</h3>
+    <section>
+      <div>Microsoft ExCel — продвинутый</div>
+      <div>Microsoft Word — продвинутый</div>
+      <div>Power Point — эксперт</div>
+    </section>
+    <section>
+      <div>Adobe — эксперт</div>
+      <div>Английский — свободный</div>
+      <div>Немецкий — продвинутый</div>
+    </section>
+  </section>
+  <section class="container">
+    <h3 id="contacts" class="bold">Контакты</h3>
+    <form>
+      <label>
+        <input type="text" placeholder="Имя">
+      </label>
+      <label>
+        <input type="email" required placeholder="Эл. почта">
+      </label>
+      <label>
+        <input type="tel" placeholder="Телефон">
+      </label>
+      <label>
+        <textarea rows="3" cols="40" placeholder="Добавьте сообщение..."></textarea>
+      </label>
+      <label>
+        <input type="submit" value="Отправить">
+      </label>
+    </form>
+    <div class="cont_text">
+      <p class="big_main_text">Триголос Алексей</p>
+      <p>Программист</p>
+      <p>Телефон:</p>
+      <p>+7(961) 680 69-99</p>
+      <p>E-mail:</p>
+      <a href="mailto:alexvlg34@gmail.com" target="_blank">alexvlg34@gmail.com</a>
+      <p>Дата рождения:</p>
+      <p>
+        <time datetime="2001-09-03">3 сентября 2001</time>
+      </p>
+    </div>
+    <a href="https://vk.com/utraspa" target="_blank"><img src="images/vk_icon.png" width="50" height="50" alt="VK"></a>
+    <a href="https://www.instagram.com/leshik_007/" target="_blank"><img src="images/inst_icon.png" width="50"
+                                                                         height="50" alt="Inst"></a>
+  </section>
+</main>
+{{> footer}}
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="../css/tasks.css">
+  <style type="text/css">{{ style }}</style>
+  <script src="../js/script.js"></script>
+  <script src="../js/tasks.js"></script>
+  <script src="../js/reg.js"></script>
+</head>
+<body>
+{{> header}}
+<main>
+  <div id="page_preloader" class="preloader">
+    <div class="loader">
+    </div>
+  </div>
+  <div>Husky</div>
+  <form>
+    <label>
+      <input required type="text" placeholder="Введите задачу" id="new_task">
+    </label>
+    <input id="send" type="submit" value="Отправить">
+  </form>
+  <div class="sort">
+    <img src="../images/down.png" width="20" height="20" onclick="sortDown()">
+    <img src="../images/up.png" width="20" height="20" onclick="sortUp()">
+  </div>
+  <section id="all_tasks">
+  </section>
+  <template id="temp">
+    <div class="task">
+      <div id="task_text"></div>
+      <label class="point">
+        <input type="checkbox" onclick="check(this);" id="checkbox">
+      </label>
+      <div class="del_space">
+        <button class="del" onclick="deleteTask(this)">Удалить</button>
+      </div>
+    </div>
+  </template>
+</main>
+{{> footer}}
+</body>
+</html>

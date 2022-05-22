@@ -1,0 +1,14 @@
+<header>
+  <nav>
+    <ul id="menu">
+      {{#each nav}}
+        <li><a href="{{ href }}" class="text_shadow bold">{{ name }}</a></li>
+      {{else}}
+        <li>Список пуст</li>
+      {{/each}}
+    </ul>
+  </nav>
+  {{#if have_customer}}
+    <p>{{ customer }}</p><button  onclick="exit();">Выйти</button>
+  {{/if}}
+</header>

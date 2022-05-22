@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Простая страничка html</title>
+    <link rel="stylesheet" href="../../css/st.css">
+    <link rel="stylesheet" href="../../css/lab5.css">
+    <!--    <link rel="stylesheet" href="../css/outlines.css">-->
+    <script src="../../js/script.js"></script>
+    <script src="../../js/script1.js"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <ul id="menu">
+            <li><a href="../index.html" class="text_shadow bold">Стартовая</a></li>
+            <li><a href="second.html" class="text_shadow bold">Вторая страница</a></li>
+            <li><a href="third.html" class="text_shadow bold">Третья страница</a></li>
+            <li><a href="./fourth.html" class="text_shadow bold">5 лаба</a></li>
+            <li><a href="tasks.html" class="text_shadow bold">Хаски</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <form id="line">
+        <label class="width row" for="day">День недели
+            <select id="day">
+                <option>Понедельник</option>
+                <option>Вторник</option>
+                <option>Среда</option>
+                <option>Четверг</option>
+                <option>Пятница</option>
+                <option>Суббота</option>
+                <option>Воскресенье</option>
+            </select>
+        </label>
+        <label class="width row" for="eo">Чётная/нечётная/все неделя
+            <select id="eo">
+                <option>Чётная</option>
+                <option>Нечётная</option>
+                <option>Все</option>
+            </select>
+        </label>
+        <label class="width row" for="sub">Предмет
+            <input required type="text" id="sub" value="Матан">
+        </label>
+        <label class="width row">Время проведения
+            <select id="time">
+                <option>8:20-9:50</option>
+                <option>10:00-11:30</option>
+                <option>11:40-13:10</option>
+                <option>13:30-15:00</option>
+                <option>15:20-16:50</option>
+                <option>17:00-18:30</option>
+                <option>18:40-20:10</option>
+                <option>20:20-21:50</option>
+                <option>8:00-10:00</option>
+                <option>9:00-11:00</option>
+                <option>10:00-12:00</option>
+                <option>11:00-13:00</option>
+                <option>12:00-14:00</option>
+                <option>13:00-15:00</option>
+                <option>14:00-16:00</option>
+                <option>15:00-17:00</option>
+                <option>16:00-18:00</option>
+                <option>17:00-19:00</option>
+                <option>18:00-20:00</option>
+                <option>19:00-21:00</option>
+                <option>20:00-22:00</option>
+            </select>
+        </label>
+        <label class="width row" for="type">Практика / лекция
+            <select id="type">
+                <option>Практика</option>
+                <option>Лекция</option>
+            </select>
+        </label>
+        <label>
+            <input type="submit" id="send" value="Добавить">
+        </label>
+    </form>
+    <section id="table">
+        <table>
+            <tr id="notdel">
+                <th>День недели</th>
+                <th>Чётность недели</th>
+                <th>Предмет</th>
+                <th>Время</th>
+                <th>Вид пары</th>
+            </tr>
+        </table>
+    </section>
+    <template id="temp">
+        <tr>
+            <td id="tday"></td>
+            <td id="teo"></td>
+            <td id="tsub"></td>
+            <td id="ttime"></td>
+            <td id="ttype"></td>
+        </tr>
+    </template>
+    <section id="buttons">
+        <input type="reset" id="delast" value="Удалить последний">
+        <input type="reset" id="delall" value="Удалить ВСЁ">
+    </section>
+</main>
+<footer>
+    © 2021 Триголос Алексей
+    <div id="pload"></div>
+</footer>
+</body>
+</html>

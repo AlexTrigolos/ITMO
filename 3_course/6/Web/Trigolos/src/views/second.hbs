@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <style type="text/css">{{ style }}</style>
+  <script src="../js/script.js"></script>
+  <script src="../js/reg.js"></script>
+</head>
+<body>
+{{> header}}
+<main>
+  {{ main_content_page }}
+  <form>
+    <label>
+      <p>E-mail</p>
+      <input type="text" size="40" id="log">
+      <p>Password</p>
+      <input type="text" size="40" id="pass">
+    </label>
+      <input type="submit" value="Отправить" id="login">
+  </form>
+</main>
+{{> footer}}
+</body>
+</html>

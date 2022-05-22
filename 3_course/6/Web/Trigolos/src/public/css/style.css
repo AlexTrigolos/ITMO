@@ -1,0 +1,299 @@
+.container {
+    width: calc(100% - 60px);
+    padding: 15px 30px;
+    font-family: Arial, Georgia, Serif, serif;
+    font-weight: normal;
+    white-space: normal;
+}
+
+#me {
+    font-size: 28px;
+}
+
+.flex {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
+
+nav ul {
+    margin: -10px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.col-1-2 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main_text {
+    padding: 80px 40px 0 60px;
+    width: 254px;
+    background: white;
+    font-size: 16px;
+}
+
+.vert_bot {
+    vertical-align: bottom;
+}
+
+.cont_text {
+    font-size: 16px;
+}
+
+.big_main_text {
+    font-size: 24px;
+}
+
+.mid_icon {
+    width: 708px;
+    background: royalblue;
+    justify-content: center;
+    margin: auto;
+}
+
+.w354 {
+    width: 354px;
+}
+
+#abc {
+    padding: 70px 50px 0 calc(50% - 354px - 2px);
+    width: calc(50% + 304px);
+    background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1613257286_141-p-sinii-estetichnii-fon-174.jpg);
+    background-size: 100%;
+    height: 472px;
+    border-left: 2px ridge #1a92df;
+    border-top: 2px ridge #1a92df;
+    border-right: 2px ridge #1a92df;
+    text-decoration-line: underline;
+}
+
+.text_shadow {
+    text-shadow: 1px 1px 4px gray;
+}
+
+.text_align_center {
+    text-align: center;
+}
+
+#pad-top {
+    padding-top: 70px;
+}
+
+#text-about-me {
+    width: 500px;
+    margin-left: calc((100% - 500px) / 2);
+    word-break: break-all;
+    background-color: gainsboro;
+    text-decoration-line: line-through;
+    text-decoration-style: wavy;
+}
+
+#author {
+    color: #fdb10c;
+}
+
+.small {
+    font-size: 10px;
+}
+
+.bold {
+    text-transform: uppercase;
+}
+
+.icon {
+    margin: 15px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery_foto {
+    width: 250px;
+    padding: 10px;
+}
+
+header {
+    position: fixed;
+    background: white;
+}
+
+main {
+    padding-top: 65px;
+}
+
+body {
+    margin: 0 2px;
+}
+
+@media screen and (max-width: 500px) {
+    .block {
+        display: none;
+    }
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(5, calc(20% - 3px));
+    justify-content: center;
+    border: 1px solid grey;
+    width: 80%;
+    text-align: center;
+    empty-cells: hide;
+    margin: auto;
+    grid-gap: 3px;
+}
+
+.table div {
+    border: 1px solid grey;
+    color: #669;
+    padding: 10px 15px;
+}
+
+.table div:nth-child(n+7):nth-child(-n+10) {
+    background: #e8edff;
+    font-size: 16px;
+}
+
+.table div:nth-child(n+17):nth-child(-n+20) {
+    background: #e8edff;
+    font-size: 16px;
+}
+
+.table div:nth-child(n+12):nth-child(-n+15) {
+    background: lightblue;
+    font-size: 15px;
+}
+
+.table div:nth-child(n+22):nth-child(-n+25) {
+    background: lightblue;
+    font-size: 15px;
+}
+
+.table div:nth-child(-n+5) {
+    background-color: lightcyan;
+}
+
+.table div:nth-child(5n-4) {
+    background-color: lightcyan;
+}
+
+label {
+    display: block;
+    width: 30%;
+}
+
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@media screen and (max-width: 540px) {
+
+    #text-about-me {
+        width: 80%;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+    label {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    nav {
+        padding-top: 50px;
+    }
+
+    main {
+        padding-top: 130px;
+    }
+
+    header.container {
+        height: 100px;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    nav li {
+        padding-bottom: 2px;
+    }
+
+    #abc {
+        height: 854px;
+        width: auto;
+        display: block;
+        padding: 50px 0 0;
+    }
+
+    .main_text {
+        padding: 40px 20px 40px 20px;
+        margin-left: calc(50% - 177px);
+        width: 314px;
+        text-align: center;
+    }
+
+    .w354 {
+        margin: 0 calc(50% - 177px);
+    }
+
+    .mid_icon {
+        width: 354px;
+    }
+}
+
+nav a:hover {
+    background: wheat;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 100%;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+    margin-top: 0;
+}
+
+nav ul ul li {
+    float: none;
+    display: list-item;
+    position: relative;
+    margin: 0;
+    padding: 0 1px;
+}
+
+.active {
+    background-color: magenta;
+}

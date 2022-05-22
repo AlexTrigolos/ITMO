@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Простая страничка html</title>
+    <link rel="stylesheet" href="../../css/tasks.css">
+    <link rel="stylesheet" href="../../css/st.css">
+    <!--  <link rel="preload" href="../css/style.css" as="fetch" crossorigin="anonymous">-->
+    <!--  <link rel="stylesheet" href="../css/outlines.css">-->
+    <script src="../../js/script.js"></script>
+    <script src="../../js/tasks.js"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <ul id="menu">
+            <li><a href="../index.html" class="text_shadow bold">Стартовая</a></li>
+            <li><a href="second.html" class="text_shadow bold">Вторая страница</a></li>
+            <li><a href="third.html" class="text_shadow bold">Третья страница</a></li>
+            <li><a href="fourth.html" class="text_shadow bold">5 лаба</a></li>
+            <li><a href="./tasks.html" class="text_shadow bold">Хаски</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="page_preloader" class="preloader">
+        <div class="loader">
+        </div>
+    </div>
+    <div>Husky</div>
+    <form>
+        <label>
+            <input required type="text" placeholder="Введите задачу" id="new_task">
+        </label>
+        <input id="send" type="submit" value="Отправить">
+    </form>
+    <div class="sort">
+        <img src="../../images/down.png" width="20" height="20" onclick="sortDown()">
+        <img src="../../images/up.png" width="20" height="20" onclick="sortUp()">
+    </div>
+    <section id="all_tasks">
+    </section>
+    <template id="temp">
+        <div class="task">
+            <div id="task_text"></div>
+            <label class="point">
+                <input type="checkbox" onclick="check(this);" id="checkbox">
+            </label>
+            <div class="del_space">
+                <button class="del" onclick="deleteTask(this)">Удалить</button>
+            </div>
+        </div>
+    </template>
+</main>
+<footer>
+    © 2021 Триголос Алексей
+    <div id="pload"></div>
+</footer>
+</body>
+</html>
